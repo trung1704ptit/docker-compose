@@ -5,8 +5,6 @@ services:
     container_name: redis
     image: "bitnami/redis:latest"
     user: "root"
-    env_file:
-      - ./.env
     environment:
       REDIS_PORT: 6379
       REDIS_PASSWORD: redis
